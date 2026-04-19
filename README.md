@@ -26,4 +26,16 @@ mosquitto_sub -h localhost -t "prueba/esp32" -v
 4. Compilar y cargar a la placa.
 
 ## Evidencia de Funcionamiento
-*(Inserta aquí las imágenes subidas a tu carpeta de evidencias usando el formato `![Test Local](evidencias/foto1.png)`)*
+Terminal 1 (Subscriber):
+ 
+Terminal 2 (Publisher):
+ 
+ Ejecución de Publisher en ESP32.
+Nota: Debido a que no contamos con la ESP32 se decidió hacer un programa en Python que hiciera el mismo proceso que la esp32
+ 
+Terminal Python:
+ 
+Terminal Raspberry:
+ 
+
+
