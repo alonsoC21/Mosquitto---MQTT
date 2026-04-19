@@ -1,2 +1,29 @@
-# Mosquitto---MQTT
+# Práctica: Servidor MQTT en Raspberry Pi y ESP32
+
 Este repositorio contiene la implementación y documentación de una arquitectura IoT básica utilizando una Raspberry Pi como broker MQTT (Mosquitto) y un microcontrolador ESP32 como Publisher.
+
+## Requisitos Hardware/Software
+* Raspberry Pi (con Mosquitto instalado y ejecutándose como servicio)
+* ESP32 (Programado vía Arduino IDE)
+* Librería `PubSubClient` para Arduino
+
+## Estructura del Proyecto
+* `/src`: Código fuente en C++ para la ESP32.
+* `/evidencias`: Capturas de pantalla comprobando la comunicación.
+
+## Instrucciones de Configuración
+
+### 1. Broker MQTT (Raspberry Pi)
+El servicio de Mosquitto se inicia automáticamente en la Raspberry Pi. Para suscribirse a los mensajes entrantes, ejecutar:
+\`\`\`bash
+mosquitto_sub -h localhost -t "prueba/esp32" -v
+\`\`\`
+
+### 2. Nodo Publisher (ESP32)
+1. Abrir el archivo `.ino` en Arduino IDE.
+2. Modificar las variables `ssid` y `password` con las credenciales de la red local.
+3. Actualizar la variable `mqtt_server` con la dirección IP de la Raspberry Pi.
+4. Compilar y cargar a la placa.
+
+## Evidencia de Funcionamiento
+*(Inserta aquí las imágenes subidas a tu carpeta de evidencias usando el formato `![Test Local](evidencias/foto1.png)`)*
