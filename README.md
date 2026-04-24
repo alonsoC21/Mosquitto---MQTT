@@ -1,4 +1,4 @@
-# Práctica: Servidor MQTT en Raspberry Pi y ESP32
+# Práctica: Servidor MQTT en Raspberry Pi y ESP32.
 Integrantes: Pardo Cordova Alonso , Salgado Garmendia Enrique
 
 Este repositorio contiene la implementación y documentación de una arquitectura IoT básica utilizando una Raspberry Pi como broker MQTT (Mosquitto) y un microcontrolador ESP32 como Publisher.
